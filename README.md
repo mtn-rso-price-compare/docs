@@ -9,7 +9,7 @@
 
 ## Arhitektura mikrostoritev
 
-![Arhitekturni diagram](.\figures\Arhitekturni diagram.png)
+![Arhitekturni diagram](figures/Arhitekturni_diagram.png)
 
 ### Opis mikrostoritev
 
@@ -42,13 +42,13 @@
 
 ### Primer napredne uporabe
 
-![Sequence diagram](.\figures\Sequence diagram.png)
+![Sequence diagram](figures/Sequence_diagram.png)
 
 
 
 ## Diagram ER
 
-![ER diagram](.\figures\ER diagram.png)
+![ER diagram](figures/ER_diagram.png)
 
 
 
