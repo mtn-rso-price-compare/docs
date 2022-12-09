@@ -68,14 +68,14 @@ Uporabnik želi dodati predmet iz določene kategorije na svoj nakupovalni sezna
     item_name:"piščančje prsi",
     price: [
     	{
-    		store_id:2,
-    		amount:7.3,
-    		last_updated:"2022-11-13T12.05"
+    	    store_id:2,
+    	    amount:7.3,
+    	    last_updated:"2022-11-13T12.05"
     	},
     	{
-    		store_id:3,
-    		amount:7.6,
-     		last_updated:"2022-11-13T12.05"
+    	    store_id:3,
+    	    amount:7.6,
+     	    last_updated:"2022-11-13T12.05"
     	}
     ]
 }
@@ -92,16 +92,16 @@ Atribut 'price' je privzeto vrnjen le za zahtevke na določen item ID.
     url:"https://www.tus.si"
     price: [
     	{
-    		item_id:36,
-    		amount:7.3,
-    		last_updated:"2022-11-13T12.05"
+    	    item_id:36,
+    	    amount:7.3,
+    	    last_updated:"2022-11-13T12.05"
     	},
     	{
-    		item_id:27,
-    		amount:5.9,
-     		last_updated:"2022-11-13T12.05"
+    	    item_id:27,
+    	    amount:5.9,
+     	    last_updated:"2022-11-13T12.05"
     	}
-	]
+    ]
 }
 ```
 
@@ -111,9 +111,9 @@ Atribut 'price' je privzeto vrnjen le za zahtevke na določen store ID.
 
 ```json
 {
-	request_id:7,
-	status:"SUCCESS",
-	last_updated:"2022-11-13T12.05"
+    request_id:7,
+    status:"SUCCESS",
+    last_updated:"2022-11-13T12.05"
 }
 ```
 
@@ -126,8 +126,8 @@ Atribut 'price' je privzeto vrnjen le za zahtevke na določen store ID.
     collection_name:"Shopping list",
     item: [
         {
-    		item_id:36
-    		item_name:"piščančje prsi"
+    	    item_id:36
+    	    item_name:"piščančje prsi"
         },
         {
             item_id:27,
@@ -145,8 +145,8 @@ Atribut 'price' je privzeto vrnjen le za zahtevke na določen store ID.
     tag_name:"Meso in mesni izdelki",
     item: [
         {
-    		id:36
-    		item_name:"piščančje prsi"
+    	    id:36
+    	    item_name:"piščančje prsi"
         },
         {
             id:25,
