@@ -126,12 +126,48 @@ Atribut 'price' je privzeto vrnjen le za zahtevke na določen store ID.
     collection_name:"Shopping list",
     item: [
         {
-    	    item_id:36
-    	    item_name:"piščančje prsi"
+    	    item_id:36,
+    	    item_name:"piščančje prsi",
+         	amount:2,
+        	price: [
+            	{
+                	store_id:2,
+                	amount:7.3,
+                	last_updated:"2022-11-13T12.05"
+            	},
+            	{
+               		store_id:3,
+                	amount:7.6,
+                	last_updated:"2022-11-13T12.05"
+            	}
+            ]
         },
         {
             item_id:27,
-            item_name:"sir Parmigiano Reggiano"
+            item_name:"sir Parmigiano Reggiano",
+            amount:1,
+            price: [
+            	{
+                	store_id:2,
+                	amount:5.6,
+                	last_updated:"2022-11-13T12.05"
+            	},
+            	{
+               		store_id:3,
+                	amount:5.2,
+                	last_updated:"2022-11-13T12.05"
+            	}
+            ]
+        }
+    ],
+    price_total: [
+        {
+            store_id:2,
+            amount:20.2
+        },
+        {
+            store_id:3,
+            amount:20.4
         }
     ]
 }
