@@ -1,0 +1,34 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: price-compare-ingress
+  annotations:
+    nginx.ingress.kubernetes.io/ssl-redirect: "false"
+    nginx.ingress.kubernetes.io/use-regex: "true"
+    nginx.ingress.kubernetes.io/rewrite-target: /$2
+spec:
+  ingressClassName: nginx
+  rules:
+   - http:
+      paths:
+        - path: /price-updater(/|$)(.*)
+          pathType: Prefix
+          backend:
+            service:
+              name: price-updater
+              port:
+                number: 8080
+        - path: /collection-manager(/|$)(.*)
+          pathType: Prefix
+          backend:
+            service:
+              name: collection-manager
+              port:
+                number: 8081
+        - path: /prometheus(/|$)(.*)
+          pathType: Prefix
+          backend:
+            service:
+              name: pc-prometheus
+              port:
+                number: 9090

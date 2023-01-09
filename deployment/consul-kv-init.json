@@ -12,6 +12,10 @@
     "value": "NjA0ODAw"
   },
   {
+    "key": "environments/dev/services/price-updater-service/1.0.0/config/update-processing-properties/request-deletion-check-interval",
+    "value": "MzYwMA=="
+  },
+  {
     "key": "environments/dev/services/price-updater-service/1.0.0/config/update-processing-properties/price-retention-period",
     "value": "NjA0ODAw"
   },
@@ -32,6 +36,14 @@
     "value": "dHJ1ZQ=="
   },
   {
+    "key": "environments/dev/services/price-updater-service/1.0.0/config/global-properties/app-liveness",
+    "value": "dHJ1ZQ=="
+  },
+  {
+    "key": "environments/dev/services/price-updater-service/1.0.0/config/global-properties/app-readiness",
+    "value": "dHJ1ZQ=="
+  },
+  {
     "key": "environments/dev/services/collection-manager-service/1.0.0/config/api-properties/verify-item-exists",
     "value": "dHJ1ZQ=="
   },
@@ -41,10 +53,14 @@
   },
   {
     "key": "environments/dev/services/collection-manager-service/1.0.0/config/client-properties/price-updater-host",
-    "value": "aG9zdC5kb2NrZXIuaW50ZXJuYWw="
+    "value": "aG9zdC5kb2NrZXIuaW50ZXJuYWw6ODA4MA=="
   },
   {
-    "key": "environments/dev/services/collection-manager-service/1.0.0/config/client-properties/price-updater-port",
-    "value": "ODA4MA=="
+    "key": "environments/dev/services/collection-manager-service/1.0.0/config/global-properties/app-liveness",
+    "value": "dHJ1ZQ=="
+  },
+  {
+    "key": "environments/dev/services/collection-manager-service/1.0.0/config/global-properties/app-readiness",
+    "value": "dHJ1ZQ=="
   }
 ]

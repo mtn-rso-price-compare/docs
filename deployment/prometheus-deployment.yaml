@@ -1,0 +1,35 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: prometheus-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: pc-prometheus
+  template:
+    metadata:
+      labels:
+        app: pc-prometheus
+    spec:
+      containers:
+        - image: mikethenut/pc-prometheus:latest
+          name: pc-prometheus
+          ports:
+            - containerPort: 9090
+              name: server
+              protocol: TCP
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: pc-prometheus
+spec:
+  ports:
+    - port: 9090
+      protocol: TCP
+      targetPort: server
+  selector:
+    app: pc-prometheus
